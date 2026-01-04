@@ -6,5 +6,5 @@ edition = "2024"
 [dependencies]
 axum = "0.8.8"
 compio = { version = "0.17.0", features = ["macros"]}
-cyper = "0.7.1"
+cyper = { version =  "0.7.1", default-features = false, features = ["http3", "rustls"] }
 cyper-axum = "0.7.1"
